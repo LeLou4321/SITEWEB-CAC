@@ -22,7 +22,7 @@ const stats = [
     id: 'experience',
     icon: <FaThumbsUp className="text-3xl text-yellow-500 mb-2" />,
     value: '15+',
-    label: 'Années d\'expérience'
+    label: 'Années d&#39;expérience'
   },
   {
     id: 'vehicles',
@@ -40,7 +40,7 @@ const values = [
   },
   {
     title: 'Expertise',
-    description: 'Notre équipe de techniciens qualifiés possède une expertise approfondie dans tous les aspects de l\'entretien et de la réparation automobile.'
+    description: 'Notre équipe de techniciens qualifiés possède une expertise approfondie dans tous les aspects de l&#39;entretien et de la réparation automobile.'
   },
   {
     title: 'Transparence',
@@ -71,13 +71,13 @@ export default function APropos() {
           <div className="md:w-1/2">
             <h2 className="text-3xl font-bold mb-6 text-gray-800">Notre Histoire</h2>
             <p className="text-gray-600 mb-4">
-              Fondé en 2010, Centre Auto Cameroun est né de la passion pour l'automobile et de la volonté d'offrir des services de qualité aux propriétaires de véhicules au Cameroun.
+              Fondé en 2010, Centre Auto Cameroun est né de la passion pour l&apos;automobile et de la volonté d&apos;offrir des services de qualité aux propriétaires de véhicules au Cameroun.
             </p>
             <p className="text-gray-600 mb-4">
-              Ce qui a commencé comme un petit atelier à Yaoundé s'est rapidement développé pour devenir l'un des centres automobiles les plus réputés du pays, avec des succursales à Douala, Bafoussam et Ngaoundéré.
+              Ce qui a commencé comme un petit atelier à Yaoundé s&apos;est rapidement développé pour devenir l&apos;un des centres automobiles les plus réputés du pays, avec des succursales à Douala, Bafoussam et Ngaoundéré.
             </p>
             <p className="text-gray-600">
-              Notre mission est simple : fournir des services d'entretien et de réparation automobile exceptionnels, avec une attention particulière portée à la qualité, à l'honnêteté et à la satisfaction du client.
+              Notre mission est simple : fournir des services d&apos;entretien et de réparation automobile exceptionnels, avec une attention particulière portée à la qualité, à l&apos;honnêteté et à la satisfaction du client.
             </p>
           </div>
           <div className="md:w-1/2 relative h-[400px] rounded-xl overflow-hidden shadow-xl">

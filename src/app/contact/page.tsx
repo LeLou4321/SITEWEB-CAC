@@ -160,7 +160,7 @@ export default function Contact() {
                 <div className="flex items-start">
                   <FaClock className="text-yellow-500 text-xl mt-1 mr-4" />
                   <div>
-                    <h3 className="font-semibold">Heures d'ouverture</h3>
+                    <h3 className="font-semibold">Heures d&apos;ouverture</h3>
                     <p className="text-gray-600">Lundi - Vendredi: 8h00 - 18h00</p>
                     <p className="text-gray-600">Samedi: 9h00 - 15h00</p>
                     <p className="text-gray-600">Dimanche: Fermé</p>

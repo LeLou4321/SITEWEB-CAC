@@ -32,9 +32,9 @@ const articles = [
     id: 2,
     title: "L'importance de la vidange régulière",
     excerpt: "Pourquoi et quand faire la vidange de votre véhicule pour optimiser sa durée de vie",
-    content: `La vidange est une opération d'entretien essentielle pour votre véhicule. Voici pourquoi :
+    content: `La vidange est une opération d&apos;entretien essentielle pour votre véhicule. Voici pourquoi :
 
-1. Rôle de l'huile moteur
+1. Rôle de l&apos;huile moteur
 - Lubrification des pièces en mouvement
 - Refroidissement du moteur
 - Protection contre la corrosion
@@ -103,7 +103,7 @@ export default function Conseils() {
           Conseils <span className="text-blue-600">Automobiles</span>
         </h1>
         <p className="text-xl text-gray-600 text-center max-w-3xl mx-auto mb-12">
-          Découvrez nos conseils d'experts pour l'entretien et la maintenance de votre véhicule
+          Découvrez nos conseils d&apos;experts pour l&apos;entretien et la maintenance de votre véhicule
         </p>
 
         {/* Barre de recherche et filtres */}

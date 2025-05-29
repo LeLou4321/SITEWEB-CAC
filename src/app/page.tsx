@@ -5,6 +5,19 @@ import { HeroGeometric } from "@/components/ui/shape-landing-hero";
 import LubricantCategories from "@/components/products/LubricantCategories";
 import TireCategories from "@/components/products/TireCategories";
 import NewsAndTips from "@/components/news/NewsAndTips";
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Centre Auto Cameroun - Votre spécialiste automobile',
+  description: 'Centre Auto Cameroun offre des services complets d\'entretien et réparation automobile à Douala et Yaoundé. Pneus, diagnostics et accessoires pour tous véhicules.',
+  alternates: {
+    canonical: '/',
+  },
+  openGraph: {
+    title: 'Centre Auto Cameroun - Votre spécialiste automobile',
+    description: 'Services d\'entretien et réparation automobile professionnels au Cameroun',
+  }
+};
 
 const services = [
   {
@@ -16,7 +29,7 @@ const services = [
   {
     icon: <FaTools />,
     title: "Entretien Auto",
-    description: "Services d'entretien complet pour votre véhicule",
+    description: "Services d&apos;entretien complet pour votre véhicule",
     image: "/images/services/entretien.jpg"
   },
   {
@@ -97,7 +110,7 @@ export default function Home() {
               <div className="relative z-10">
                 <div className="text-4xl mb-4">✅</div>
                 <h3 className="text-xl font-semibold mb-2 text-secondary">Qualité Garantie</h3>
-                <p>Des prestations garanties et des pièces de qualité pour votre tranquillité d’esprit.</p>
+                <p>Des prestations garanties et des pièces de qualité pour votre tranquillité d&#39;esprit.</p>
               </div>
             </div>
             <div className="relative bg-white rounded-2xl shadow card p-8 flex flex-col items-center text-center overflow-hidden">
@@ -173,6 +186,53 @@ export default function Home() {
           </div>
         </div>
       </section>
+      
+      {/* Schema.org structured data for auto repair business */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "AutoRepair",
+            "name": "Centre Auto Cameroun",
+            "image": "https://centreautocameroun.netlify.app/images/cac-og-image.jpg",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "123 Rue Principale",
+              "addressLocality": "Douala",
+              "addressRegion": "Littoral",
+              "postalCode": "0000",
+              "addressCountry": "CM"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": 4.0511,
+              "longitude": 9.7679
+            },
+            "url": "https://centreautocameroun.netlify.app",
+            "telephone": "+237-XXX-XXX-XXX",
+            "priceRange": "$$",
+            "openingHoursSpecification": [
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                "opens": "08:00",
+                "closes": "18:00"
+              },
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Saturday",
+                "opens": "09:00",
+                "closes": "16:00"
+              }
+            ],
+            "sameAs": [
+              "https://facebook.com/centreautocameroun",
+              "https://instagram.com/centreautocameroun"
+            ]
+          })
+        }}
+      />
     </main>
   );
 }

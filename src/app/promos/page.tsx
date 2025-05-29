@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
-import { FaTag, FaClock } from 'react-icons/fa';
+import { FaClock } from 'react-icons/fa';
 
 const promotions = [
   {
@@ -30,7 +30,7 @@ const promotions = [
     image: "/images/promos/promo-diagnostic.jpg",
     validUntil: "2025-06-30",
     discount: "Gratuit",
-    conditions: "Pour tout service d'entretien d'une valeur minimale de 100 000 FCFA."
+    conditions: "Pour tout service d&apos;entretien d&apos;une valeur minimale de 100 000 FCFA."
   }
 ];
 
@@ -72,7 +72,7 @@ export default function Promos() {
                 
                 <div className="flex items-center text-sm text-gray-500 mb-4">
                   <FaClock className="mr-2" />
-                  <span>Valable jusqu'au {new Date(promo.validUntil).toLocaleDateString()}</span>
+                  <span>Valable jusqu&apos;au {new Date(promo.validUntil).toLocaleDateString()}</span>
                 </div>
 
                 <button

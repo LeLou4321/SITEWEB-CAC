@@ -19,7 +19,7 @@ const featuredArticles = [
   },
   {
     id: 2,
-    title: "L'importance de la vidange régulière",
+    title: "L&apos;importance de la vidange régulière",
     excerpt: "Pourquoi et quand faire la vidange de votre véhicule pour optimiser sa durée de vie",
     image: "/images/services/entretien.jpg",
     author: "Paul Biya",
@@ -30,7 +30,7 @@ const featuredArticles = [
   {
     id: 3,
     title: "Les voyants du tableau de bord : que signifient-ils ?",
-    excerpt: "Guide pratique pour comprendre les différents voyants d'alerte de votre véhicule",
+    excerpt: "Guide pratique pour comprendre les différents voyants d&apos;alerte de votre véhicule",
     image: "/images/services/diagnostic.jpg",
     author: "Sarah Ngo",
     date: "2025-04-05",
@@ -49,7 +49,7 @@ export default function NewsAndTips() {
             <span className="block h-1 w-24 bg-yellow-500 mx-auto mt-2"></span>
           </h2>
           <p className="text-gray-600 mt-4 max-w-3xl mx-auto">
-            Découvrez nos derniers conseils d'experts pour l'entretien et la maintenance de votre véhicule
+            Découvrez nos derniers conseils d&apos;experts pour l&apos;entretien et la maintenance de votre véhicule
           </p>
         </div>
 

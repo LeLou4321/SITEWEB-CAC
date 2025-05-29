@@ -30,7 +30,7 @@ const services = [
     id: 'vidange',
     name: 'VIDANGE',
     icon: <FaOilCan className="text-4xl md:text-5xl text-primary mb-4" />,
-    description: 'Vidange d\'huile moteur et remplacement des filtres pour prolonger la durée de vie de votre moteur.'
+    description: 'Vidange d&apos;huile moteur et remplacement des filtres pour prolonger la durée de vie de votre moteur.'
   },
   {
     id: 'climatisation',
@@ -72,7 +72,7 @@ export default function Services() {
           Nos <span className="text-primary">Services</span>
         </h1>
         <p className="text-xl text-gray-600 text-center max-w-3xl mx-auto mb-12">
-          Centre Auto Cameroun vous propose une gamme complète de services pour l'entretien et la réparation de votre véhicule
+          Centre Auto Cameroun vous propose une gamme complète de services pour l&apos;entretien et la réparation de votre véhicule
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -89,7 +89,7 @@ export default function Services() {
         </div>
 
         <div className="mt-16 bg-primary/10 rounded-xl p-8 text-center">
-          <h2 className="text-2xl md:text-3xl font-bold mb-4">Besoin d'un service spécifique ?</h2>
+          <h2 className="text-2xl md:text-3xl font-bold mb-4">Besoin d&apos;un service spécifique ?</h2>
           <p className="text-lg text-gray-700 mb-6 max-w-2xl mx-auto">
             Nos techniciens qualifiés sont à votre disposition pour répondre à tous vos besoins automobiles.
           </p>

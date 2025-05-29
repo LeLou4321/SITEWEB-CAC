@@ -13,7 +13,7 @@ const navigation = [
 ];
 
 export default function MainNav() {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  // La ligne avec isMobileMenuOpen et setIsMobileMenuOpen a été supprimée car ces variables n'étaient pas utilisées
   
   return (
     <nav className="flex gap-10 flex-nowrap overflow-x-auto w-full min-w-[500px] md:min-w-[700px] lg:min-w-[900px] text-[1.07rem] md:text-[1.12rem] lg:text-[1.15rem] bg-white border border-gray-200 rounded-full shadow-sm px-6 py-2" style={{ background: '#fff' }}>

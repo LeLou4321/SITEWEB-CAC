@@ -54,16 +54,7 @@ export default function HeroSelector() {
   const sideItems = items.filter((_, idx) => idx !== selected);
   const selectedItem = items[selected];
 
-  // Helper pour choisir une couleur de fond par index, cyclique
-  const getBgColor = (idx: number) => palette[idx % palette.length];
-  // Helper pour texte blanc ou foncé selon le fond
-  const isLight = (hex: string) => {
-    const c = hex.replace('#', '');
-    const r = parseInt(c.substr(0, 2), 16);
-    const g = parseInt(c.substr(2, 2), 16);
-    const b = parseInt(c.substr(4, 2), 16);
-    return (r * 0.299 + g * 0.587 + b * 0.114) > 186;
-  };
+  // Les fonctions getBgColor et isLight ont été supprimées car elles n'étaient pas utilisées
 
   return (
     <section className="w-full min-h-[600px] bg-white pt-24 pb-16 px-4">

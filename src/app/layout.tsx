@@ -6,7 +6,50 @@ import { ThemeProvider } from '@/components/layout/ThemeProvider';
 
 export const metadata: Metadata = {
   title: 'Centre Auto Cameroun',
-  description: 'Votre partenaire de confiance pour tous vos besoins automobiles au Cameroun',
+  description: 'Votre partenaire de confiance pour tous vos besoins automobiles au Cameroun. Services d\'entretien, réparation, pneus et accessoires.',
+  keywords: 'centre auto, automobile, entretien voiture, réparation, pneus, Cameroun, Douala, Yaoundé',
+  authors: [{ name: 'Centre Auto Cameroun' }],
+  creator: 'Centre Auto Cameroun',
+  publisher: 'Centre Auto Cameroun',
+  metadataBase: new URL('https://centreautocameroun.netlify.app'),
+  alternates: {
+    canonical: '/',
+  },
+  openGraph: {
+    title: 'Centre Auto Cameroun - Services Automobiles Professionnels',
+    description: 'Votre partenaire de confiance pour tous vos besoins automobiles au Cameroun. Entretien, réparation, pneus et accessoires.',
+    url: 'https://centreautocameroun.netlify.app',
+    siteName: 'Centre Auto Cameroun',
+    locale: 'fr_FR',
+    type: 'website',
+    images: [
+      {
+        url: '/images/cac-og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Centre Auto Cameroun',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Centre Auto Cameroun - Services Automobiles Professionnels',
+    description: 'Votre partenaire de confiance pour tous vos besoins automobiles au Cameroun. Entretien, réparation, pneus et accessoires.',
+    images: ['/images/cac-og-image.jpg'],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  verification: {
+    google: 'à-remplacer-par-votre-code-de-vérification',
+  },
 };
 
 export default function RootLayout({

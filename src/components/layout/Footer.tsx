@@ -2,7 +2,6 @@
 
 import * as React from "react"
 import Link from 'next/link';
-import Image from 'next/image';
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
@@ -55,7 +54,7 @@ export default function Footer() {
                 className="absolute right-1 top-1 h-8 w-8 rounded-full bg-yellow-500 text-white transition-transform hover:scale-105 hover:bg-yellow-600"
               >
                 <Send className="h-4 w-4" />
-                <span className="sr-only">S'abonner</span>
+                <span className="sr-only">S&apos;abonner</span>
               </Button>
             </form>
             <div className="absolute -right-4 top-0 h-24 w-24 rounded-full bg-yellow-500/10 blur-2xl" />
@@ -175,7 +174,7 @@ export default function Footer() {
           </p>
           <nav className="flex gap-4 text-sm">
             <Link href="/conditions" className="transition-colors hover:text-yellow-500">
-              Conditions d'utilisation
+              Conditions d&apos;utilisation
             </Link>
             <Link href="/rgpd" className="transition-colors hover:text-yellow-500">
               RGPD et vie privée
