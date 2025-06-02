@@ -8,6 +8,12 @@
   ESLINT_NO_DEV_ERRORS = "true"
   NEXT_DISABLE_ESLINT = "1"
 
+# Désactiver explicitement le plugin Next.js
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+  [plugins.inputs]
+    enable = false
+
 [[redirects]]
   from = "/*"
   to = "/index.html"
