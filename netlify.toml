@@ -8,9 +8,7 @@
   ESLINT_NO_DEV_ERRORS = "true"
   NEXT_DISABLE_ESLINT = "1"
 
-# Nous n'utilisons plus le plugin Next.js car nous utilisons l'export statique
-# [[plugins]]
-#  package = "@netlify/plugin-nextjs"
+# Pas de plugin Next.js avec l'export statique
 
 [[redirects]]
   from = "/*"
