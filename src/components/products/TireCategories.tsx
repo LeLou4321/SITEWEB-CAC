@@ -16,14 +16,14 @@ const tireCategories = [
   {
     id: '4x4',
     name: 'PNEUS 4X4',
-    image: '/images/services/PNEU 4x46.png',
+    image: '/images/services/pneu-4x46.png',
     description: 'Pneus tout-terrain pour 4x4 et SUV',
     link: '/produits?category=pneus&subCategory=4x4'
   },
   {
     id: 'utilitaire',
     name: 'PNEUS UTILITAIRE',
-    image: '/images/services/pneu utilitaire.jpg',
+    image: '/images/services/pneu-utilitaire.jpg',
     description: 'Pneus pour véhicules utilitaires et camionnettes',
     link: '/produits?category=pneus&subCategory=utilitaire'
   }

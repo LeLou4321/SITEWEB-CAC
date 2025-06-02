@@ -1,6 +1,6 @@
 [build]
   command = "npm run build --no-lint"
-  publish = ".next"
+  publish = "out"
 
 [build.environment]
   NODE_VERSION = "18"
@@ -8,11 +8,18 @@
   ESLINT_NO_DEV_ERRORS = "true"
   NEXT_DISABLE_ESLINT = "1"
 
-[[plugins]]
-  package = "@netlify/plugin-nextjs"
+# Nous n'utilisons plus le plugin Next.js car nous utilisons l'export statique
+# [[plugins]]
+#  package = "@netlify/plugin-nextjs"
 
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
   force = false
+
+# Configuration pour les images
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
