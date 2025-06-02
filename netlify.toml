@@ -8,15 +8,12 @@
   ESLINT_NO_DEV_ERRORS = "true"
   NEXT_DISABLE_ESLINT = "1"
 
-# Pas de plugin Next.js avec l'export statique
-
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
   force = false
 
-# Configuration pour les images
 [[headers]]
   for = "/images/*"
   [headers.values]
