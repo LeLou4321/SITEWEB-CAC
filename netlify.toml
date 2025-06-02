@@ -1,6 +1,6 @@
 [build]
   command = "npm run build --no-lint"
-  publish = "out"
+  publish = ".next"
 
 [build.environment]
   NODE_VERSION = "18"
@@ -8,17 +8,9 @@
   ESLINT_NO_DEV_ERRORS = "true"
   NEXT_DISABLE_ESLINT = "1"
 
-# Désactiver explicitement le plugin Next.js
+# Utiliser le plugin Next.js de Netlify
 [[plugins]]
   package = "@netlify/plugin-nextjs"
-  [plugins.inputs]
-    enable = false
-
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
-  force = false
 
 [[headers]]
   for = "/images/*"

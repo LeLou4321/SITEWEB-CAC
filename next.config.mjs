@@ -11,8 +11,6 @@ const nextConfig = {
       // Ignore TypeScript errors during production builds
       ignoreBuildErrors: true,
     },
-    output: 'export', // Génère une version statique pour Netlify
-    distDir: 'out', // Spécifie explicitement le dossier de sortie
   };
   
   export default nextConfig;
