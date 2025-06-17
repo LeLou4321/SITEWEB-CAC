@@ -1,3 +1,18 @@
 User-agent: *
 Allow: /
-Sitemap: https://centreautocameroun.netlify.app/sitemap.xml
+Sitemap: https://centreautocameroun.com/sitemap.xml
+
+# Optimisé pour le référencement du Centre Auto Cameroun
+# Dernière mise à jour: 17 juin 2025
+
+# Permettre l'exploration de toutes les pages importantes
+Allow: /services
+Allow: /produits
+Allow: /promos
+Allow: /a-propos
+Allow: /contact
+Allow: /conseils
+
+# Bloquer les pages en double ou non nécessaires pour le référencement
+Disallow: /api/
+Disallow: /*?*

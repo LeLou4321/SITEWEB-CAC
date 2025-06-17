@@ -8,15 +8,70 @@ import NewsAndTips from "@/components/news/NewsAndTips";
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Centre Auto Cameroun - Votre spécialiste automobile',
-  description: 'Centre Auto Cameroun offre des services complets d\'entretien et réparation automobile à Douala et Yaoundé. Pneus, diagnostics et accessoires pour tous véhicules.',
+  title: 'Centre Auto Cameroun - Votre spécialiste automobile à Douala & Yaoundé',
+  description: 'Centre Auto Cameroun - Leader des services automobiles au Cameroun. Pneus, vidange, révision, entretien et réparation de véhicules. Professionnalisme et qualité garantis. Devis gratuits !',
+  keywords: [
+    'centre auto Cameroun',
+    'réparation voiture Douala',
+    'entretien automobile Yaoundé',
+    'vente pneus Cameroun',
+    'vidange moteur',
+    'mécanique auto',
+    'garage automobile',
+    'révision technique',
+    'diagnostic électronique',
+    'mécanique générale'
+  ],
   alternates: {
     canonical: '/',
   },
   openGraph: {
     title: 'Centre Auto Cameroun - Votre spécialiste automobile',
-    description: 'Services d\'entretien et réparation automobile professionnels au Cameroun',
-  }
+    description: 'Services professionnels d\'entretien et réparation automobile à Douala et Yaoundé. Pneus, vidanges, diagnostics et plus encore.',
+    type: 'website',
+    locale: 'fr_CM',
+    url: 'https://centreautocameroun.com',
+    siteName: 'Centre Auto Cameroun',
+    images: [
+      {
+        url: 'https://centreautocameroun.com/images/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Centre Auto Cameroun - Services Automobiles',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Centre Auto Cameroun - Votre spécialiste automobile',
+    description: 'Services professionnels d\'entretien et réparation automobile à Douala et Yaoundé',
+    images: ['https://centreautocameroun.com/images/og-image.jpg'],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  verification: {
+    google: 'votre-verification-google',
+    yandex: 'votre-verification-yandex',
+  },
+  metadataBase: new URL('https://centreautocameroun.com'),
+  applicationName: 'Centre Auto Cameroun',
+  authors: [{ name: 'Centre Auto Cameroun' }],
+  generator: 'Next.js',
+  referrer: 'origin-when-cross-origin',
+  formatDetection: {
+    email: true,
+    address: true,
+    telephone: true,
+  },
 };
 
 const services = [
@@ -195,7 +250,7 @@ export default function Home() {
             "@context": "https://schema.org",
             "@type": "AutoRepair",
             "name": "Centre Auto Cameroun",
-            "image": "https://centreautocameroun.netlify.app/images/cac-og-image.jpg",
+            "image": "https://centreautocameroun.com/images/cac-og-image.jpg",
             "address": {
               "@type": "PostalAddress",
               "streetAddress": "123 Rue Principale",
@@ -209,7 +264,7 @@ export default function Home() {
               "latitude": 4.0511,
               "longitude": 9.7679
             },
-            "url": "https://centreautocameroun.netlify.app",
+            "url": "https://centreautocameroun.com",
             "telephone": "+237-XXX-XXX-XXX",
             "priceRange": "$$",
             "openingHoursSpecification": [
