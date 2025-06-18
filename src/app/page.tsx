@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     siteName: 'Centre Auto Cameroun',
     images: [
       {
-        url: 'https://centreautocameroun.com/images/og-image.jpg',
+        url: 'https://centreautocameroun.com/images/og/cac-og-image.jpg',
         width: 1200,
         height: 630,
         alt: 'Centre Auto Cameroun - Services Automobiles',
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Centre Auto Cameroun - Votre spécialiste automobile',
     description: 'Services professionnels d\'entretien et réparation automobile à Douala et Yaoundé',
-    images: ['https://centreautocameroun.com/images/og-image.jpg'],
+    images: ['https://centreautocameroun.com/images/og/cac-og-image.jpg'],
   },
   robots: {
     index: true,
@@ -250,7 +250,7 @@ export default function Home() {
             "@context": "https://schema.org",
             "@type": "AutoRepair",
             "name": "Centre Auto Cameroun",
-            "image": "https://centreautocameroun.com/images/cac-og-image.jpg",
+            "image": "https://centreautocameroun.com/images/og/cac-og-image.jpg",
             "address": {
               "@type": "PostalAddress",
               "streetAddress": "123 Rue Principale",

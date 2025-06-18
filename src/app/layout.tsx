@@ -25,10 +25,10 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: 'https://centreautocameroun.com/images/cac-og-image.jpg',
+        url: 'https://centreautocameroun.com/images/og/cac-og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Centre Auto Cameroun',
+        alt: 'Centre Auto Cameroun - Services Automobiles Professionnels',
       },
     ],
   },
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Centre Auto Cameroun - Services Automobiles Professionnels',
     description: 'Votre partenaire de confiance pour tous vos besoins automobiles au Cameroun. Entretien, réparation, pneus et accessoires.',
-    images: ['https://centreautocameroun.com/images/cac-og-image.jpg'],
+    images: ['https://centreautocameroun.com/images/og/cac-og-image.jpg'],
   },
   robots: {
     index: true,
@@ -49,7 +49,11 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    google: 'à-remplacer-par-votre-code-de-vérification',
+    google: 'google-site-verification=LAb4-G3HhU-9CAziBeXR7Ujlb_usQBDmwFGmPLwseIw',
+    yandex: 'YANDEX-VERIFICATION-CODE',
+    other: {
+      'facebook-domain-verification': 'FB-DOMAIN-VERIFICATION',
+    },
   },
 };
 
