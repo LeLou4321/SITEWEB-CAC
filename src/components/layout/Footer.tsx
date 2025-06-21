@@ -19,7 +19,7 @@ const siege = {
   ville: "Yaoundé (Siège)",
   adresse: "Av Mvog Fouda Ada, Jaco",
   tel: "+237 690 90 10 10",
-  email: "contact@centreautocameroun.com",
+  email: "accueil.yaounde@cacsarl.com",
   whatsapp: "+237690901010"
 };
 
@@ -94,7 +94,7 @@ export default function Footer() {
               <TooltipProvider>
                 <Tooltip>
                   <TooltipTrigger asChild>
-                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.facebook.com/centreautocameroun" target="_blank" rel="noopener noreferrer">
                       <Button variant="outline" size="icon" className="rounded-full">
                         <Facebook className="h-4 w-4" />
                         <span className="sr-only">Facebook</span>
@@ -173,15 +173,7 @@ export default function Footer() {
             © {new Date().getFullYear()} Centre Auto Cameroun. Tous droits réservés.
           </p>
           <nav className="flex gap-4 text-sm">
-            <Link href="/conditions" className="transition-colors hover:text-yellow-500">
-              Conditions d&apos;utilisation
-            </Link>
-            <Link href="/rgpd" className="transition-colors hover:text-yellow-500">
-              RGPD et vie privée
-            </Link>
-            <Link href="/retour" className="transition-colors hover:text-yellow-500">
-              Politique de retour
-            </Link>
+            {/* Liens légaux supprimés à la demande du client */}
           </nav>
         </div>
       </div>
