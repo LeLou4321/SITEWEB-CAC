@@ -77,21 +77,72 @@ export const productsSchema = {
       "position": 1,
       "name": "Pneus",
       "description": "Pneus de qualité pour tous types de véhicules",
-      "image": "https://centreautocameroun.com/images/services/pneus.jpg"
+      "image": "https://centreautocameroun.com/images/services/pneus.jpg",
+      "brand": {
+        "@type": "Brand",
+        "name": "Michelin"
+      },
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "XAF",
+        "lowPrice": "25000",
+        "highPrice": "150000",
+        "offerCount": "15",
+        "availability": "https://schema.org/InStock"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.5",
+        "reviewCount": "89"
+      }
     },
     {
       "@type": "Product",
       "position": 2,
       "name": "Lubrifiants",
       "description": "Huiles et lubrifiants pour tous types de moteurs",
-      "image": "https://centreautocameroun.com/images/services/lubrifiants.jpg"
+      "image": "https://centreautocameroun.com/images/services/lubrifiants.jpg",
+      "brand": {
+        "@type": "Brand",
+        "name": "Total"
+      },
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "XAF",
+        "lowPrice": "5000",
+        "highPrice": "35000",
+        "offerCount": "12",
+        "availability": "https://schema.org/InStock"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.2",
+        "reviewCount": "56"
+      }
     },
     {
       "@type": "Product",
       "position": 3,
       "name": "Batteries",
       "description": "Batteries de haute performance pour tous véhicules",
-      "image": "https://centreautocameroun.com/images/products/batterie-bosch.jpg"
+      "image": "https://centreautocameroun.com/images/products/batterie-bosch.jpg",
+      "brand": {
+        "@type": "Brand",
+        "name": "Bosch"
+      },
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "XAF",
+        "lowPrice": "45000",
+        "highPrice": "120000",
+        "offerCount": "8",
+        "availability": "https://schema.org/InStock"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.7",
+        "reviewCount": "42"
+      }
     }
   ]
 };

@@ -15,13 +15,13 @@ const stats = [
   {
     id: 'services',
     icon: <FaTools className="text-3xl text-yellow-500 mb-2" />,
-    value: '8+',
+    value: '10+',
     label: 'Services spécialisés'
   },
   {
     id: 'experience',
     icon: <FaThumbsUp className="text-3xl text-yellow-500 mb-2" />,
-    value: '15+',
+    value: '18+',
     label: 'Années d&#39;expérience'
   },
   {
@@ -62,7 +62,7 @@ export default function APropos() {
             À propos de <span className="text-yellow-500">Centre Auto Cameroun</span>
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Votre partenaire de confiance pour tous vos besoins automobiles au Cameroun depuis 2010
+            Votre partenaire de confiance pour tous vos besoins automobiles au Cameroun depuis 2006
           </p>
         </div>
 
@@ -71,7 +71,7 @@ export default function APropos() {
           <div className="md:w-1/2">
             <h2 className="text-3xl font-bold mb-6 text-gray-800">Notre Histoire</h2>
             <p className="text-gray-600 mb-4">
-              Fondé en 2010, Centre Auto Cameroun est né de la passion pour l&apos;automobile et de la volonté d&apos;offrir des services de qualité aux propriétaires de véhicules au Cameroun.
+              Fondé en 2006, Centre Auto Cameroun est né de la passion pour l&apos;automobile et de la volonté d&apos;offrir des services de qualité aux propriétaires de véhicules au Cameroun.
             </p>
             <p className="text-gray-600 mb-4">
               Ce qui a commencé comme un petit atelier à Yaoundé s&apos;est rapidement développé pour devenir l&apos;un des centres automobiles les plus réputés du pays, avec des succursales à Douala, Bafoussam et Ngaoundéré.
@@ -137,11 +137,7 @@ export default function APropos() {
           <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
             Notre équipe de professionnels qualifiés est dédiée à fournir un service exceptionnel et des solutions adaptées à vos besoins.
           </p>
-          <div className="bg-yellow-500 text-black py-4 px-8 rounded-lg inline-block">
-            <p className="text-lg font-semibold">
-              Rejoignez notre équipe ! Envoyez votre CV à <span className="underline">recrutement@centreautocameroun.com</span>
-            </p>
-          </div>
+
         </div>
       </div>
     </main>
