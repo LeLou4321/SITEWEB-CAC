@@ -104,7 +104,7 @@ export const productsSchema = {
       "image": "https://centreautocameroun.com/images/services/lubrifiants.jpg",
       "brand": {
         "@type": "Brand",
-        "name": "Total"
+        "name": "Cepsa"
       },
       "offers": {
         "@type": "AggregateOffer",
