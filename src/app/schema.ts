@@ -3,7 +3,7 @@ export const organizationSchema = {
   "@type": "AutoRepair",
   "name": "Centre Auto Cameroun",
   "url": "https://centreautocameroun.com",
-  "logo": "https://centreautocameroun.com/images/logo.png",
+  "logo": "https://centreautocameroun.com/images/logo-cac.jpg",
   "description": "Centre Auto Cameroun est votre partenaire de confiance pour tous vos besoins automobiles au Cameroun depuis 2010.",
   "address": {
     "@type": "PostalAddress",
