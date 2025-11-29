@@ -15,7 +15,6 @@ const productCategories: Record<string, {
     name: string;
     description: string;
     image: string;
-    price?: string;
     brand?: string;
   }>;
 }> = {
@@ -29,24 +28,21 @@ const productCategories: Record<string, {
         name: 'Michelin Energy Saver+',
         description: 'Pneu économique avec une excellente longévité',
         image: '/images/services/pneus.jpg',
-        price: 'À partir de 45 000 FCFA',
-        brand: 'Michelin'
+                brand: 'Michelin'
       },
       {
         id: 'pneu-bridgestone',
         name: 'Bridgestone Turanza',
         description: 'Confort de conduite optimal et faible bruit de roulement',
         image: '/images/services/pneus.jpg',
-        price: 'À partir de 55 000 FCFA',
-        brand: 'Bridgestone'
+                brand: 'Bridgestone'
       },
       {
         id: 'pneu-goodyear',
         name: 'Goodyear EfficientGrip',
         description: 'Performance et économie de carburant',
         image: '/images/services/pneus.jpg',
-        price: 'À partir de 40 000 FCFA',
-        brand: 'Goodyear'
+                brand: 'Goodyear'
       }
     ]
   },
@@ -60,24 +56,21 @@ const productCategories: Record<string, {
         name: 'Cepsa Genuine 5W-30',
         description: 'Huile synthétique pour moteurs essence et diesel modernes',
         image: '/images/services/lubrifiants.jpg',
-        price: 'À partir de 15 000 FCFA',
-        brand: 'Cepsa'
+                brand: 'Cepsa'
       },
       {
         id: 'huile-cepsa-10w40',
         name: 'Cepsa Star 10W-40',
         description: 'Huile semi-synthétique polyvalente',
         image: '/images/services/lubrifiants.jpg',
-        price: 'À partir de 12 000 FCFA',
-        brand: 'Cepsa'
+         brand: 'Cepsa'
       },
       {
         id: 'huile-transmission',
         name: 'Huile de Transmission',
         description: 'Lubrifiant pour boîtes de vitesses manuelles et automatiques',
         image: '/images/services/lubrifiants.jpg',
-        price: 'À partir de 8 000 FCFA',
-        brand: 'Cepsa'
+         brand: 'Cepsa'
       }
     ]
   },
@@ -91,24 +84,21 @@ const productCategories: Record<string, {
         name: 'Bosch S4',
         description: 'Batterie standard avec excellente fiabilité',
         image: '/images/products/batterie-bosch.jpg',
-        price: 'À partir de 65 000 FCFA',
-        brand: 'Bosch'
+         brand: 'Bosch'
       },
       {
         id: 'batterie-bosch-s5',
         name: 'Bosch S5',
         description: 'Batterie premium pour véhicules modernes équipés',
         image: '/images/products/batterie-bosch.jpg',
-        price: 'À partir de 85 000 FCFA',
-        brand: 'Bosch'
+         brand: 'Bosch'
       },
       {
         id: 'batterie-bosch-agm',
         name: 'Bosch AGM',
         description: 'Batterie Start-Stop pour véhicules avec système automatique',
         image: '/images/products/batterie-bosch.jpg',
-        price: 'À partir de 120 000 FCFA',
-        brand: 'Bosch'
+         brand: 'Bosch'
       }
     ]
   },
@@ -122,22 +112,19 @@ const productCategories: Record<string, {
         name: 'Groupe Électrogène 2 KVA',
         description: 'Idéal pour usage domestique léger',
         image: '/images/products/groupe.jpg',
-        price: 'À partir de 150 000 FCFA'
-      },
+               },
       {
         id: 'groupe-5kva',
         name: 'Groupe Électrogène 5 KVA',
         description: 'Pour usage domestique et petit commerce',
         image: '/images/products/groupe.jpg',
-        price: 'À partir de 350 000 FCFA'
-      },
+               },
       {
         id: 'groupe-10kva',
         name: 'Groupe Électrogène 10 KVA',
         description: 'Pour usage professionnel et industriel',
         image: '/images/products/groupe.jpg',
-        price: 'À partir de 750 000 FCFA'
-      }
+               }
     ]
   },
   'accessoires': {
@@ -150,24 +137,21 @@ const productCategories: Record<string, {
         name: 'Essuie-glaces Bosch',
         description: 'Balais d\'essuie-glaces haute performance',
         image: '/images/products/accessoires-bosch.jpeg',
-        price: 'À partir de 8 000 FCFA',
-        brand: 'Bosch'
+         brand: 'Bosch'
       },
       {
         id: 'bougies',
         name: 'Bougies d\'allumage Bosch',
         description: 'Bougies pour un démarrage optimal',
         image: '/images/products/accessoires-bosch.jpeg',
-        price: 'À partir de 3 500 FCFA',
-        brand: 'Bosch'
+         brand: 'Bosch'
       },
       {
         id: 'filtres',
         name: 'Filtres Bosch',
         description: 'Filtres à huile, air et habitacle',
         image: '/images/products/accessoires-bosch.jpeg',
-        price: 'À partir de 5 000 FCFA',
-        brand: 'Bosch'
+         brand: 'Bosch'
       }
     ]
   },
@@ -181,22 +165,19 @@ const productCategories: Record<string, {
         name: 'Pompe de Filtration',
         description: 'Pompe performante pour une eau toujours propre',
         image: '/images/products/materiel-piscine.jpg',
-        price: 'À partir de 85 000 FCFA'
-      },
+               },
       {
         id: 'robot-piscine',
         name: 'Robot Nettoyeur',
         description: 'Nettoyage automatique de votre piscine',
         image: '/images/products/materiel-piscine.jpg',
-        price: 'À partir de 250 000 FCFA'
-      },
+               },
       {
         id: 'produits-traitement',
         name: 'Produits de Traitement',
         description: 'Chlore, pH et autres produits d\'entretien',
         image: '/images/products/materiel-piscine.jpg',
-        price: 'À partir de 5 000 FCFA'
-      }
+               }
     ]
   },
   'betoniere': {
@@ -209,22 +190,19 @@ const productCategories: Record<string, {
         name: 'Bétonnière 120L',
         description: 'Idéale pour petits travaux de maçonnerie',
         image: '/images/products/betoniere.jpg',
-        price: 'À partir de 180 000 FCFA'
-      },
+               },
       {
         id: 'betoniere-250l',
         name: 'Bétonnière 250L',
         description: 'Pour chantiers de taille moyenne',
         image: '/images/products/betoniere.jpg',
-        price: 'À partir de 350 000 FCFA'
-      },
+               },
       {
         id: 'betoniere-350l',
         name: 'Bétonnière 350L',
         description: 'Capacité professionnelle pour grands chantiers',
         image: '/images/products/betoniere.jpg',
-        price: 'À partir de 500 000 FCFA'
-      }
+               }
     ]
   }
 };
@@ -297,10 +275,7 @@ export default async function CategoryPage({ params }: { params: Promise<{ categ
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-800 mb-2">{product.name}</h3>
                 <p className="text-gray-600 mb-4">{product.description}</p>
-                {product.price && (
-                  <p className="text-primary font-semibold text-lg mb-4">{product.price}</p>
-                )}
-                <Link
+                                <Link
                   href="/contact"
                   className="inline-block bg-primary hover:bg-primary/90 text-white font-semibold py-2 px-6 rounded-lg transition-all duration-300 w-full text-center"
                 >
