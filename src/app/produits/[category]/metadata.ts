@@ -48,7 +48,7 @@ export async function generateMetadata({ params }: { params: Promise<{ category:
     openGraph: {
       title: meta.title,
       description: meta.description,
-      url: `https://centreautocameroun.com/produits/${params.category}`,
+      url: `https://centreautocameroun.com/produits/${category}`,
       siteName: 'Centre Auto Cameroun',
       locale: 'fr_FR',
       type: 'website',
