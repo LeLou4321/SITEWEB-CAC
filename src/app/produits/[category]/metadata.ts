@@ -31,8 +31,9 @@ const categoryMetadata: Record<string, { title: string; description: string }> =
   }
 };
 
-export async function generateMetadata({ params }: { params: { category: string } }): Promise<Metadata> {
-  const meta = categoryMetadata[params.category];
+export async function generateMetadata({ params }: { params: Promise<{ category: string }> }): Promise<Metadata> {
+  const { category } = await params;
+  const meta = categoryMetadata[category];
   
   if (!meta) {
     return {

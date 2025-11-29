@@ -229,10 +229,11 @@ const productCategories: Record<string, {
   }
 };
 
-export default function CategoryPage({ params }: { params: { category: string } }) {
-  const category = productCategories[params.category];
+export default async function CategoryPage({ params }: { params: Promise<{ category: string }> }) {
+  const { category } = await params;
+  const categoryData = productCategories[category];
 
-  if (!category) {
+  if (!categoryData) {
     notFound();
   }
 
@@ -250,32 +251,32 @@ export default function CategoryPage({ params }: { params: { category: string } 
               <Link href="/produits" className="hover:text-primary transition-colors">Produits</Link>
             </li>
             <li>/</li>
-            <li className="text-primary font-semibold">{category.name}</li>
+            <li className="text-primary font-semibold">{categoryData.name}</li>
           </ol>
         </nav>
 
         {/* Header */}
         <div className="relative h-64 md:h-80 rounded-2xl overflow-hidden mb-12">
           <Image
-            src={category.image}
-            alt={category.name}
+            src={categoryData.image}
+            alt={categoryData.name}
             fill
             className="object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/30"></div>
           <div className="absolute inset-0 flex flex-col justify-center px-8 md:px-12">
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
-              {category.name}
+              {categoryData.name}
             </h1>
             <p className="text-lg md:text-xl text-white/90 max-w-2xl">
-              {category.description}
+              {categoryData.description}
             </p>
           </div>
         </div>
 
         {/* Products Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {category.products.map((product) => (
+          {categoryData.products.map((product) => (
             <div
               key={product.id}
               className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
