@@ -14,12 +14,8 @@ export const metadata: Metadata = {
   publisher: 'Centre Auto Cameroun',
   metadataBase: new URL('https://centreautocameroun.com'),
   icons: {
-    icon: [
-      { url: '/favicon.ico', sizes: 'any' },
-      { url: '/images/logo.png', type: 'image/png', sizes: '192x192' },
-    ],
-    apple: '/images/logo.png',
-    shortcut: '/favicon.ico',
+    icon: '/icon.png',
+    apple: '/apple-icon.png',
   },
   alternates: {
     canonical: '/',
