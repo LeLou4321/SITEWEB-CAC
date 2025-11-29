@@ -39,8 +39,75 @@ export const organizationSchema = {
     "https://www.instagram.com/centreautocameroun"
   ],
   "priceRange": "$$",
-  "servesCuisine": "Automobile Services",
-  "areaServed": ["Yaoundé", "Douala", "Bafoussam", "Ngaoundéré"]
+  "areaServed": ["Yaoundé", "Douala", "Bafoussam", "Ngaoundéré"],
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://centreautocameroun.com/recherche?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+};
+
+// Schéma de navigation pour les sitelinks Google
+export const siteNavigationSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Centre Auto Cameroun",
+  "url": "https://centreautocameroun.com",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://centreautocameroun.com/recherche?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+};
+
+// Schéma BreadcrumbList pour la navigation
+export const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "itemListElement": [
+    {
+      "@type": "SiteNavigationElement",
+      "position": 1,
+      "name": "Accueil",
+      "url": "https://centreautocameroun.com/"
+    },
+    {
+      "@type": "SiteNavigationElement",
+      "position": 2,
+      "name": "Services",
+      "url": "https://centreautocameroun.com/services"
+    },
+    {
+      "@type": "SiteNavigationElement",
+      "position": 3,
+      "name": "Produits",
+      "url": "https://centreautocameroun.com/produits"
+    },
+    {
+      "@type": "SiteNavigationElement",
+      "position": 4,
+      "name": "Promotions",
+      "url": "https://centreautocameroun.com/promos"
+    },
+    {
+      "@type": "SiteNavigationElement",
+      "position": 5,
+      "name": "À propos",
+      "url": "https://centreautocameroun.com/a-propos"
+    },
+    {
+      "@type": "SiteNavigationElement",
+      "position": 6,
+      "name": "Contact",
+      "url": "https://centreautocameroun.com/contact"
+    },
+    {
+      "@type": "SiteNavigationElement",
+      "position": 7,
+      "name": "Conseils",
+      "url": "https://centreautocameroun.com/conseils"
+    }
+  ]
 };
 
 export const servicesSchema = {

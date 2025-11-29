@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import { ThemeProvider } from '@/components/layout/ThemeProvider';
-import { organizationSchema, servicesSchema, productsSchema } from './schema';
+import { organizationSchema, servicesSchema, productsSchema, siteNavigationSchema, breadcrumbSchema } from './schema';
 
 export const metadata: Metadata = {
   title: 'Centre Auto Cameroun',
@@ -14,9 +14,12 @@ export const metadata: Metadata = {
   publisher: 'Centre Auto Cameroun',
   metadataBase: new URL('https://centreautocameroun.com'),
   icons: {
-    icon: '/images/logo.png',
+    icon: [
+      { url: '/favicon.ico', sizes: 'any' },
+      { url: '/images/logo.png', type: 'image/png', sizes: '192x192' },
+    ],
     apple: '/images/logo.png',
-    shortcut: '/images/logo.png',
+    shortcut: '/favicon.ico',
   },
   alternates: {
     canonical: '/',
@@ -73,6 +76,14 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(siteNavigationSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
         />
         <script
           type="application/ld+json"
