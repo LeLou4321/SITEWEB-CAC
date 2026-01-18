@@ -5,6 +5,7 @@ import { HeroGeometric } from "@/components/ui/shape-landing-hero";
 import LubricantCategories from "@/components/products/LubricantCategories";
 import TireCategories from "@/components/products/TireCategories";
 import NewsAndTips from "@/components/news/NewsAndTips";
+import Actualites from "@/components/news/Actualites";
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -111,6 +112,9 @@ export default function Home() {
         title2="soin de votre véhicule étape par étape"
         description=""
       />
+
+      {/* Section Actualités */}
+      <Actualites />
 
       {/* Section Services Principaux avec images de fond */}
       <section className="py-10">

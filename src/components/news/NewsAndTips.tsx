@@ -12,17 +12,17 @@ const featuredArticles = [
     title: "Comment choisir les bons pneus pour votre véhicule",
     excerpt: "Guide complet pour sélectionner les pneus adaptés à votre voiture et à votre style de conduite",
     image: "/images/services/pneus.jpg",
-    author: "Michel Kamdem",
+    author: "FOAKA PATRICE",
     date: "2025-04-15",
     category: "Pneus",
     link: "/conseils"
   },
   {
     id: 2,
-    title: "L&apos;importance de la vidange régulière",
+    title: "L'importance de la vidange régulière",
     excerpt: "Pourquoi et quand faire la vidange de votre véhicule pour optimiser sa durée de vie",
     image: "/images/services/entretien.jpg",
-    author: "Paul Biya",
+    author: "PIEMI ANGELLO",
     date: "2025-04-10",
     category: "Entretien",
     link: "/conseils"
@@ -32,7 +32,7 @@ const featuredArticles = [
     title: "Les voyants du tableau de bord : que signifient-ils ?",
     excerpt: "Guide pratique pour comprendre les différents voyants d&apos;alerte de votre véhicule",
     image: "/images/services/diagnostic.jpg",
-    author: "Sarah Ngo",
+    author: "BONO SAMY",
     date: "2025-04-05",
     category: "Sécurité",
     link: "/conseils"
